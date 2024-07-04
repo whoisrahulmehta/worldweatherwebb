@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/worldweatherwebb/static/css/main.653b4f6c.css",
+    "main.js": "/worldweatherwebb/static/js/main.83302637.js",
+    "static/js/453.c892e8a2.chunk.js": "/worldweatherwebb/static/js/453.c892e8a2.chunk.js",
+    "static/media/beach-side.jpg": "/worldweatherwebb/static/media/beach-side.5f8aae606e9b5368d86a.jpg",
+    "index.html": "/worldweatherwebb/index.html",
+    "main.653b4f6c.css.map": "/worldweatherwebb/static/css/main.653b4f6c.css.map",
+    "main.83302637.js.map": "/worldweatherwebb/static/js/main.83302637.js.map",
+    "453.c892e8a2.chunk.js.map": "/worldweatherwebb/static/js/453.c892e8a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.653b4f6c.css",
+    "static/js/main.83302637.js"
+  ]
+}
