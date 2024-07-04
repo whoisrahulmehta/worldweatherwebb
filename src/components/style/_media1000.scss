@@ -1,0 +1,25 @@
+@media screen and (max-width: 720px) {
+
+    .App{
+        // background-image: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/773ac512-567c-4316-81c9-511db0c8a094);
+     background-repeat: no-repeat;
+     background-size: cover;
+     }
+     section{
+     grid-area: 1/1/13/5;
+       // background: white;
+   }main{
+     grid-area:1/5/10/13;
+     .top{
+       width: 45%;
+       
+     }
+   }footer{
+     grid-area: 10/5/12/13;
+   }header{
+     grid-area: 12/2/13/13
+   }
+    
+}
+
+ 

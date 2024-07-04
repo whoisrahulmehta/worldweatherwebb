@@ -1,0 +1,196 @@
+@media (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @mixin FR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin FC {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+  }
+  %box {
+    border: 1px solid tansparent;
+    border-radius: 20px;
+  }
+  @mixin MFD {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  @mixin MFL {
+    @extend %box;
+    background: rgba(0, 0, 0, 1);
+    border-color: rgba(0, 0, 0, 0.2);
+    color: black;
+  }
+  body,
+  #root,
+  .App {
+    // background: white;
+    width: 100%;
+    height: 100vh;
+    @include FR;
+  }
+  .App {
+    @include FC;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    // background: black;
+    height: 100vh; //just for simulation
+    width: 100%; //just for simulation
+    gap: 3px;
+    // background-image: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/773ac512-567c-4316-81c9-511db0c8a094);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  //width section
+  header,
+  main,
+  footer,
+  section {
+    // @include MFD;
+    // border-radius: 35px;
+    width: 100%;
+  }
+  //height division
+  header {
+    height: 7%;
+    order: 4;
+  }
+  main {
+    height: 67%;
+    order: 1;
+  }
+  footer {
+    @include FR;
+    justify-content: start;
+    padding: 0 10px;
+    height: 11%;
+    order: 3;
+    overflow-x: auto;
+    overflow-y: none;
+    scrollbar-width: none;
+    gap: 10px;
+    p {
+      @include MFD;
+      border-radius: 10px;
+      min-width: 20%;
+      @include FC;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  }
+  section {
+    height: 13%;
+    order: 2;
+  }
+  header {
+    @include MFD;
+    @include FR;
+    justify-content: space-evenly;
+    padding: 0 0 10px 0;
+    // background: white;
+    text-align: center;
+    span {
+      text-align: center;
+      padding: 10px 16px;
+      border: 0;
+      border-bottom: 2px solid white;
+    }
+  }
+  section {
+    // @include MFD;
+    @include FR;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20% ;
+    p, a {
+      @include MFD;
+      @include FC;
+      width: 170%;
+      height: 100%;
+    }
+  }
+  main {
+    @include FC;
+    justify-content: space-evenly;
+    // border-radius: 40px;
+    //setting dimension of boxes inside
+    .end,
+    .mid,
+    .top {
+      @include FR;
+      @include MFD;
+      background: rgba(255, 255, 25, 0.02);
+      width: 100%;
+    }
+    .top,
+    .end {
+      padding: 5px 10px;
+      height: 10%;
+    }
+    .mid {
+      height: 79%;
+    }
+    .top {
+      @include FR;
+      justify-content: space-between;
+      padding: 0 4%;
+      p {
+        @include FR;
+        width: 40%;
+        gap: 20px;
+      }
+    }
+    .end {
+      justify-content: end;
+    }
+    .mid {
+      @include FC;
+      justify-content: start;
+      text-align: left;
+      p {
+        width: 100%;
+        padding: 0 10px;
+      }
+      .wimg {
+        @include FR;
+        height: 90%;
+      }
+    }
+  }
+  /// idea other two page make them routed in react//and for git use js
+  // keep maian outisde dynmaci and play along the footer and section to change the data dynamically and keep the day //and
+  // hourly as list  scrollable and just need to add a night toggle refresh toggle and location toggle at header on //to
+  .App-Loading {
+    width: 100%;
+    height: 100vh;
+    font-size: 0.51rem !important;
+    @include FR;
+    padding: 20%;
+    .logo {
+      height: 100vh;
+      animation: none;
+      .loadingtop,
+      .loadingleft,
+      .loadingright {
+        animation: none;
+      }
+    }
+  }
+  .details{
+    flex-direction: column;
+    justify-content: start;
+    p{
+      min-width: 80%;
+    }
+  }
+}
